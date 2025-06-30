@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Phone, MapPin, Mail, Star, Leaf, CheckCircle, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -392,101 +391,44 @@ const Index = () => {
               Contact us for seed inquiries, expert advice, or to place an order
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-green-600 mr-4 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Address</h4>
-                    <p className="text-gray-600">
-                      Sri Laxmi Narasimha Traders<br />
-                      Karatagi, Karnataka<br />
-                      PIN - 583229
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Phone className="h-6 w-6 text-green-600 mr-4 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Phone</h4>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 87654 32109</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Mail className="h-6 w-6 text-green-600 mr-4 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Email</h4>
-                    <p className="text-gray-600">info@slntseeds.com</p>
-                  </div>
+          <div className="max-w-2xl mx-auto">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Contact Information</h3>
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <MapPin className="h-6 w-6 text-green-600 mr-4 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-gray-800">Address</h4>
+                  <p className="text-gray-600">
+                    Sri Laxmi Narasimha Traders<br />
+                    Karatagi, Karnataka<br />
+                    PIN - 583229
+                  </p>
                 </div>
               </div>
-              <div className="mt-8 p-6 bg-white rounded-lg shadow-md">
-                <h4 className="font-semibold text-gray-800 mb-4">Business Hours</h4>
-                <div className="space-y-2 text-gray-600">
-                  <p>Monday - Saturday: 8:00 AM - 7:00 PM</p>
-                  <p>Sunday: 9:00 AM - 5:00 PM</p>
-                  <p className="text-sm text-green-600 font-medium">We're here to help during farming seasons!</p>
+              <div className="flex items-start">
+                <Phone className="h-6 w-6 text-green-600 mr-4 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-gray-800">Phone</h4>
+                  <p className="text-gray-600">+91 9449432513</p>
+                  <p className="text-gray-600">+91 98765 43210</p>
+                  <p className="text-gray-600">+91 87654 32109</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Mail className="h-6 w-6 text-green-600 mr-4 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-gray-800">Email</h4>
+                  <p className="text-gray-600">info@slntseeds.com</p>
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name *
-                  </label>
-                  <Input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number *
-                  </label>
-                  <Input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message *
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    rows={5}
-                    className="w-full"
-                    placeholder="Tell us about your seed requirements, farm size, or any questions you have..."
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-green-600 hover:bg-green-700 text-white py-3"
-                >
-                  Send Message
-                </Button>
-              </form>
+            <div className="mt-8 p-6 bg-white rounded-lg shadow-md">
+              <h4 className="font-semibold text-gray-800 mb-4">Business Hours</h4>
+              <div className="space-y-2 text-gray-600">
+                <p>Monday - Saturday: 8:00 AM - 7:00 PM</p>
+                <p>Sunday: 9:00 AM - 5:00 PM</p>
+                <p className="text-sm text-green-600 font-medium">We're here to help during farming seasons!</p>
+              </div>
             </div>
           </div>
         </div>
@@ -523,6 +465,7 @@ const Index = () => {
               <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
               <div className="space-y-2 text-gray-300">
                 <p className="flex items-center"><MapPin className="h-4 w-4 mr-2" /> Karatagi, Karnataka - 583229</p>
+                <p className="flex items-center"><Phone className="h-4 w-4 mr-2" /> +91 9449432513</p>
                 <p className="flex items-center"><Phone className="h-4 w-4 mr-2" /> +91 98765 43210</p>
                 <p className="flex items-center"><Mail className="h-4 w-4 mr-2" /> info@slntseeds.com</p>
               </div>
