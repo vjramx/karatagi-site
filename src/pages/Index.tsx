@@ -410,8 +410,6 @@ const Index = () => {
                 <div>
                   <h4 className="font-semibold text-gray-800">Phone</h4>
                   <p className="text-gray-600">+91 9449432513</p>
-                  <p className="text-gray-600">+91 98765 43210</p>
-                  <p className="text-gray-600">+91 87654 32109</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -466,7 +464,6 @@ const Index = () => {
               <div className="space-y-2 text-gray-300">
                 <p className="flex items-center"><MapPin className="h-4 w-4 mr-2" /> Karatagi, Karnataka - 583229</p>
                 <p className="flex items-center"><Phone className="h-4 w-4 mr-2" /> +91 9449432513</p>
-                <p className="flex items-center"><Phone className="h-4 w-4 mr-2" /> +91 98765 43210</p>
                 <p className="flex items-center"><Mail className="h-4 w-4 mr-2" /> info@slntseeds.com</p>
               </div>
             </div>
